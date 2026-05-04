@@ -1,0 +1,28 @@
+# initial installation
+sudo apt update
+sudo apt install postgresql postgresql-contrib
+
+
+# set password (linux/WSL only) --> sets system user password for postgres
+sudo passwd postgres
+
+# start psql in shell
+Mac: psql postgres
+Linux: sudo -u postgres psql
+
+# Create database
+CREATE DATABASE *database*;
+
+# connect to database
+\c database
+gives prompt like -> database=#
+
+# alter database user's password
+ALTER USER postgres PASSWORD 'password';
+
+# Connection string:
+format: protocol://username:[password]@host:port/database
+	protocol://username:[password]@host:port/database?sslmode=disable
+password not necessary on Mac
+
+Standard port for PostgreSQL is 5432
