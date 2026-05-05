@@ -1,0 +1,4 @@
+# for Golang:
+import package -> github.com/joho/godotenv
+add at top of file -> godotenv.Load()
+get variables in file -> port := os.Getenv("SERVER_PORT")
