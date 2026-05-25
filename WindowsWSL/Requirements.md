@@ -19,9 +19,12 @@
     - PostgreSQL
     - MongoDB
 -   Accessories/Tools
+    - GitBash
+        - vital for any git activities on windows
     - via Webinstaller
         - neovim
         - nerdfont2
         - 
 	- Docker
         - install on Windows to use in WSL
+-   	
