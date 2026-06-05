@@ -26,3 +26,6 @@ format: protocol://username:[password]@host:port/database
 password not necessary on Mac
 
 Standard port for PostgreSQL is 5432
+
+# restarting database
+if there's an error connecting to the server, or Arch didn't start it on boot, run: sudo systemctl restart postgresql
